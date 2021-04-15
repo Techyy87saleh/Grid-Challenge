@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root{
+            --f-color:#ffff;
+        }
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin:0;
+            height:95vh;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(9,1fr));
+              grid-gap:10px;
+             /* grid-template-rows: repeat(8,1fr); */
+            height:100vh;
+            margin:2vw;
+            padding:2rem;
+             grid-template-areas:
+            "one one two two three three four four"
+            "five five six six six  six seven seven"
+            "five five six six six  six seven seven"
+            "five five eight eight nine  nine seven seven"
+            "five five   eight eight nine  nine   seven seven"
+    
+
+
+
+
+             
+        }
+      
+
+        .one{
+            background:black;
+            grid-area: one;
+            padding:2rem;
+            color:var(--f-color);
+          
+
+
+        }
+        .two{
+            background:#0984e3;
+            grid-area:two;
+            padding:2rem;
+            color:var(--f-color);
+        }
+        .three{
+            background:#55efc4;
+            grid-area:three;
+            padding:2rem;
+            color:var(--f-color);
+        }
+        .four{
+            background:black;
+            grid-area:four;
+            padding:2rem;
+            color:var(--f-color);
+        }
+        .five{
+            background:#30336b;
+            grid-area: five;
+            padding-top:15rem;
+            text-align: center;
+                    
+             color:var(--f-color);
+        }
+        .six{
+            background:black;
+            grid-area:six;
+            padding:2rem;
+            color:var(--f-color);
+        }
+        .seven{
+            background:#30336b;
+            grid-area:seven;
+            padding-top:15rem;
+            text-align: center;
+             color:var(--f-color);
+        }
+        .eight{
+            background:#0984e3;
+            grid-area:eight;   
+            padding:2rem;
+            color:var(--f-color);
+
+        }
+        .nine{
+            background:#55efc4;
+            grid-area:nine;
+            padding:2rem;
+            color:var(--f-color);
+        }
+        
+
+        @media(max-width:768px){
+           .container{
+               display: flex;
+               flex-direction: column;
+             }
+         .five{
+           padding-top:1rem;
+            }
+            .seven{
+                padding-top:1rem;
+            }
+        } 
+        
+        
+    </style>
+    <div class = "container">
+    <div class = "one">
+        <h1>HEADER</h1>
+        <p>Your content goes here.Edit or remove this text inline or in the module Content Settings.</p>
+    </div>
+    <div class = "two">
+        <h1>HEADER</h1>
+    </div>
+    <div class = "three">
+        <h1>HEADER</h1>
+    </div>   
+    <div class = "four">
+        <H1>HEADER</H1>
+    </div>
+    <div class = "five">
+        <H1>HEADER</H1>
+        <p>Your content goes here.</p>
+    </div>
+    <div class = "six">
+        <h1>HEADER</h1>
+        <p>Your content goes here.Edit or remove this text inline or in the module Content Settings.You can also style every aspect of this content in the module design settings and even apply custom CSS to this text in the module Advanced settings</p>
+    </div>
+    <div class = "seven">
+        <h1>HEADER</h1>
+        <P>Your content goes here.Edit or remove this text inline or in the module Content settings.</P>
+    </div>
+    <div class = "eight">
+        <h1>HEADER</h1>
+        <P>Your content goes here.Edit or remove this text inline or in the module Content settings.</P>
+    </div>
+    <div class = "nine">
+        <h1>HEADER</h1>
+        <P>Your content goes here.Edit or remove this text inline or in the module Content settings.</P>
+    </div>
+   </div>
+</body>
+</html>
